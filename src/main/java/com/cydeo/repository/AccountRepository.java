@@ -1,20 +1,16 @@
 package com.cydeo.repository;
 
-import com.cydeo.model.Account;
+import com.cydeo.entity.Account;
+import com.cydeo.enums.AccountStatus;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class AccountRepository {
+@Repository
+public interface AccountRepository extends JpaRepository<Account,Long> {
 
-    public static List<Account> accountList = new ArrayList<>();
 
-    public Account save(Account account){
-        accountList.add(account);
-        return account;
-    }
+    List<Account> findAllByAccountStatus(AccountStatus accountStatus);
 
-    public List<Account> findAll() {
-        return accountList;
-    }
 }
