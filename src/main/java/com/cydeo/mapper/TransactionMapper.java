@@ -1,6 +1,8 @@
 package com.cydeo.mapper;
 
+import com.cydeo.dto.AccountDTO;
 import com.cydeo.dto.TransactionDTO;
+import com.cydeo.entity.Account;
 import com.cydeo.entity.Transaction;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
