@@ -3,8 +3,6 @@ package com.cydeo.entity;
 import com.cydeo.enums.AccountStatus;
 import com.cydeo.enums.AccountType;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
