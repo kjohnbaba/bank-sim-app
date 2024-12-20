@@ -97,10 +97,7 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     private void checkAccountOwnership(AccountDTO sender, AccountDTO receiver) {
-        /*  TASK
-            write an if statement that checks if one of the account is saving,
-            and user of sender or receiver is not the same, throw AccountOwnershipException
-         */
+
         //if(senderOrReceiverIsSaving)And(!UserOfSenderAndReceiverMustBeTheSame)
             //throw Exception
         if((sender.getAccountType().equals(AccountType.SAVING)||receiver.getAccountType().equals(AccountType.SAVING))
